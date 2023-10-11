@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fibonacci Calculator</title>
+</head>
+<h1>Fibonacci calculator</h1>
+<body>
+<div>
+  <label for="numberInput">Enter a number (n):</label>
+  <input type="number" id="numberInput" placeholder="Input a number" [(ngModel)]="n">
+  <button (click)="calculate()">Calculate</button>
+</div>
+
+<div *ngIf="result !== null">
+  <p>Fibonacci({{ n }}) = {{ result }}</p>
+</div>
+</body>
+</html>
+
+<!--<h1>Fibonacci Calculator</h1>-->
+<!--<body>-->
+<!--<div>-->
+<!--  <label for="numberInput">Enter a number (n):</label>-->
+<!--  <input type="number" id="numberInput" placeholder="Input a number" [(ngModel)]="n">-->
+<!--  <button (click)="calculate()">Calculate</button>-->
+<!--</div>-->
+
+<!--<div *ngIf="result !== null">-->
+<!--  <p>Fibonacci({{ n }}) = {{ result }}</p>-->
+<!--</div>-->
+<!--</body>-->
+
+
+
+
+
+

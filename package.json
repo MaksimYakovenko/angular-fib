@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4500",
-    "build": "ng build",
+    "build": "ng build --configuration=production --base-href https://MaksimYakovenko.github.io/angular-fib/",
+    "deploy": "npx angular-cli-ghpages --dir=dist/angular-fib",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
